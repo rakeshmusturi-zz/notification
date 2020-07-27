@@ -1,3 +1,5 @@
+A simple Facebook like notification compoenet using React JS and Javascript.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

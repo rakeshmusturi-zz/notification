@@ -22,6 +22,9 @@ class Notification extends React.Component {
     const { toggleNotification } = this.state;
     this.setState({ toggleNotification: !toggleNotification });
   };
+  clearAllMessage = () => {
+    this.props.onClearAll && this.props.onClearAll();
+  };
   generateDate = timeStamp => {
     const d = new Date(timeStamp * 1000);
     const n = d.getDate();
@@ -139,6 +142,7 @@ class Notification extends React.Component {
                             cursor: "pointer",
                             marginBottom: "-6px"
                           }}
+                          onClick={()=>this.clearAllMessage()}
                           src={require("./clearAll.svg")}
                         ></img>
                       )}
